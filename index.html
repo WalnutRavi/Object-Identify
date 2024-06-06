@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rede Neural</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h3 class="btn btn-danger heading">Image identify</h3>
+        <p style="font-size: 22px;">The model are training to identify diferent objects:</p>
+        <b class="nameobject">
+            Portable Fan 
+            <hr>
+            Air controller
+            <hr>
+            Wood lion
+            <hr>
+            Glasses box
+            <hr>
+            Eletronic babysitter
+            <br>
+            <br>
+        </b>
+        <label>Webcam visualization:</label>
+        <div id="Webcam"></div>
+        <label>Image capture</label>
+        <div id="Result"></div>
+        <button class="btn btn-primary" onclick="Take_snapshot()">Image capture</button>
+        <br>
+        <br>
+        <button class="btn btn-success" onclick="Check()">Image Identify</button>
+        <p>object: <span id="Object_result"></span></p>
+        <p>Accuracy: <span id="Object_accuracy"></span></p>
+    </center>
+</body>
+
+</html>
