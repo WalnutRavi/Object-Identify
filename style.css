@@ -5,6 +5,6 @@ body{
     width:100%;
     font-size: 23px;
 }
-#Webcam{
+#Webcam,#Result{
     border-style: solid;
 }

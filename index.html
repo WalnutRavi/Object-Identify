@@ -11,6 +11,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="webcamjs/webcam.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js">
+    </script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
 </head>
 
 <body>
@@ -18,7 +22,7 @@
         <h3 class="btn btn-danger heading">Image identify</h3>
         <p style="font-size: 22px;">The model are training to identify diferent objects:</p>
         <b class="nameobject">
-            Portable Fan 
+            Portable Fan
             <hr>
             Air controller
             <hr>
@@ -38,8 +42,8 @@
         <br>
         <br>
         <button class="btn btn-success" onclick="Check()">Image Identify</button>
-        <p>object: <span id="Object_result"></span></p>
-        <p>Accuracy: <span id="Object_accuracy"></span></p>
+        <p>object: <span style="color: blue;" id="Object_result"></span></p>
+        <p>Accuracy: <span style="color: blue;" id="Object_accuracy"></span></p>
     </center>
     <script src="main.js"></script>
 </body>
